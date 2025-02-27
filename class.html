@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>班级页面</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="class-title">班级名称</h1>
+    <div>
+        <h2>学生名单</h2>
+        <ul id="student-list"></ul>
+        <input type="text" id="student-name" placeholder="输入学生姓名">
+        <button onclick="addStudent()">添加学生</button>
+    </div>
+    <div>
+        <h2>随机点名</h2>
+        <button onclick="pickRandomStudent()">随机点名</button>
+        <p id="picked-student"></p>
+    </div>
+    <div>
+        <h2>点名历史记录</h2>
+        <ul id="history-list"></ul>
+        <button onclick="clearHistory()">清空历史记录</button>
+    </div>
+    <script src="class.js"></script>
+</body>
+
+</html>
